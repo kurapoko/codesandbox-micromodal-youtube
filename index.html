@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
+  <body>
+    <!-- [1] -->
+    <div
+      id="modal-movie"
+      class="modal"
+      aria-hidden="true"
+      data-href="3aHmsNEAyY0"
+    >
+      <!-- [2] -->
+      <div tabindex="-1" data-micromodal-close>
+        <!-- [3] -->
+        <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+          <header>
+            <h2 id="modal-1-title">
+              Modal Title
+            </h2>
 
-<body>
-	<div id="app"></div>
+            <!-- [4] -->
+            <button aria-label="Close modal" data-micromodal-close></button>
+          </header>
 
-	<script src="src/index.js">
-	</script>
-</body>
-
+          <div id="modal-1-content" class="c-modal-movie-content">
+            <div id="modal_yt_player"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
 </html>
